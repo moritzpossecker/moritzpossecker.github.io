@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { IconArrowUpRight, IconDownload, IconBrandGithub, IconMail } from "@tabler/icons-react";
 
 export default function Home() {
@@ -92,7 +93,13 @@ export default function Home() {
 
           <article className="relative bg-white p-6 rounded-lg shadow-sm border border-zinc-100">
             <Link href="https://head-coach.io" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between mb-2 w-fit gap-2">
-              <img src="/img/headcoach/headcoach.png" alt="Head Coach Logo" className="w-8 h-8 rounded-full object-cover" />
+              <Image
+                src="/img/headcoach/headcoach.png"
+                alt="Head Coach Logo"
+                width={8}
+                height={8}
+                className="w-8 h-8 rounded-full object-cover"
+              />
               <h3 className="text-xl font-semibold text-zinc-900 group-hover:text-purple-600 transition-colors">
                 Head Coach - NFL Fantasy Manager
               </h3>
@@ -115,7 +122,13 @@ export default function Home() {
 
           <article className="relative bg-white p-6 rounded-lg shadow-sm border border-zinc-100">
             <Link href="https://blueball.world" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between mb-2 w-fit gap-2">
-              <img src="/img/blueball/globe.svg" alt="Blue Ball Logo" className="w-8 h-8 rounded-full object-cover" />
+              <Image
+                src="/img/blueball/globe.svg"
+                alt="Blue Ball Logo"
+                width={8}
+                height={8}
+                className="w-8 h-8 rounded-full object-cover"
+              />
               <h3 className="text-xl font-semibold text-zinc-900 group-hover:text-purple-600 transition-colors">
                 Blue Ball - Geographie-Quizspiel
               </h3>
